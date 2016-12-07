@@ -12,14 +12,14 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 //add a marker
-var marker = L.marker([40.6407, -111.63823]).addTo(mymap);
+var marker = L.marker([40.64955, -111.64861]).addTo(mymap);
 
 //add a polygon
  var polygon = L.polygon([
-     [40.64422, -111.64261],//1
-     [40.59721, -111.64261],//2
-     [40.59721, -111.63463],//3
-     [40.64422, -111.63463],//4
+     [40.65095, -111.64261],//1
+     [40.65095, -111.65553],//2
+     [40.62921, -111.65553],//3
+     [40.62921, -111.64261],//4
 
 //should I keep the circle?
 
@@ -38,7 +38,7 @@ var marker = L.marker([40.6407, -111.63823]).addTo(mymap);
 // }).addTo(mymap);
 
 //insert a marker popup
-marker.bindPopup("<b>Spruces Campground!<br>Days Fork Trail.</b>").openPopup();
+marker.bindPopup("<b>Mill D South!<br>Doughnut Falls.</b>").openPopup();
 
 //insert a standalone popup
 // var popup = L.popup()

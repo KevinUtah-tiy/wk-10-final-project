@@ -12,7 +12,7 @@
 // jquery
 $(document).ready(function(){
 
-  var api = "http://api.openweathermap.org/data/2.5/weather?lat=40.6407&lon=-111.63823&appid=f52141d316d5fe9ec4f644247441dfa9&units=imperial";
+  var api = "http://api.openweathermap.org/data/2.5/weather?lat=40.64955&lon=-111.64861&appid=f52141d316d5fe9ec4f644247441dfa9&units=imperial";
 
 //Get JSON data into JS file
 $.getJSON(api, function(data) {
