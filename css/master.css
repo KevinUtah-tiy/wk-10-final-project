@@ -38,7 +38,7 @@ h2, h3
   /*border-radius: 15px;*/
   display: flex;
   float: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   margin: 1rem;
   /*list-style:*/
@@ -127,6 +127,6 @@ ul {
   /*flex-direction: row;*/
   /*flex-wrap: nowrap;*/
   /*align-items: flex-end;*/
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
 }

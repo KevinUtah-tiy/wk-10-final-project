@@ -2,7 +2,7 @@
 console.log(document.title);
 
 "use strict";
-var mymap = L.map('mapid').setView([40.6032, -111.5841], 12);
+var mymap = L.map('mapid').setView([40.700074, -111.713074], 12);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
@@ -12,40 +12,20 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 //add a marker
-var marker = L.marker([40.60338, -111.58448]).addTo(mymap);
+var marker = L.marker([40.700074, -111.713074]).addTo(mymap);
 
 //add a polygon
-var polygon = L.polygon([
-    [40.60294, -111.58416],//1
-    [40.60321, -111.58485],//2
-    [40.60298, -111.5856],//3
-    [40.60311, -111.5874],//4
-    [40.60244, -111.58762],//5
-    [40.60203, -111.58815],//6
-    [40.60206, -111.58974],//7
-    [40.60337, -111.59058],//8
-    [40.60409, -111.59058],//9
-    [40.60517, -111.58933],//10
-    [40.60624, -111.58963],//11
-    [40.60888, -111.59435],//12
-    [40.60188, -111.59773],//13
-    [40.60188, -111.60157],//14
-    [40.60425, -111.60157],//15
-    [40.61126, -111.59592],//16
-    [40.61126, -111.59250],//17
-    //[40.59707, -111.60386],//18
-    //[40.60152, -111.59338],//19
-    //[40.60487, -111.59274],//20
-    [40.60772, -111.58948],//21
-    [40.60582, -111.58795],//22
-    [40.60501, -111.58567],//23
-    [40.60459, -111.58567],//24
-    [40.60378, -111.58416]//25
+ var polygon = L.polygon([
+     [40.70081, -111.71771],//1
+     [40.70837, -111.68926],//2
+     [40.68746, -111.64531],//3
+     [40.68011, -111.64531],//4
+     [40.69511, -111.68926],//5
+     [40.69583, -111.71771]//6
+
 //should I keep the circle?
 
     //unnecessary points to be cleaned up
-    // [40.5778, -111.5917],//5
-    // [40.5741, -111.5917],//6
     // [40.5741, -111.6136] //7
     // [40.575517, -111.680978] example
 ]).addTo(mymap);
@@ -58,12 +38,12 @@ var polygon = L.polygon([
 // }).addTo(mymap);
 
 //insert a marker popup
-marker.bindPopup("<b>Brighton!<br>Solitude Lake Trail.<br>Same TH as Silver Lake</b>").openPopup();
+marker.bindPopup("<b>Desolation Trail to<br> Scenic Overlook.</b>").openPopup();
 
-//insert a standalone popup
+// insert a standalone popup
 // var popup = L.popup()
-//     .setLatLng([40.55, -111.6875])
-//     .setContent("I am a standalone popup.")
+//     .setLatLng([40.68899, -111.74340])
+//     .setContent("Scenic Overlook.")
 //     .openOn(mymap);
 
 //dealing with events
