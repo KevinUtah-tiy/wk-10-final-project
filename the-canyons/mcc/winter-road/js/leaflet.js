@@ -38,7 +38,7 @@ var marker = L.marker([40.700074, -111.713074]).addTo(mymap);
 // }).addTo(mymap);
 
 //insert a marker popup
-marker.bindPopup("<b>Desolation Trail to<br> Scenic Overlook.</b>").openPopup();
+marker.bindPopup("<b>Winter Road to the <br> Big Water Yurt.</b>").openPopup();
 
 // insert a standalone popup
 // var popup = L.popup()

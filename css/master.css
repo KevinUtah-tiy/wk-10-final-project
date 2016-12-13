@@ -130,3 +130,7 @@ ul {
   justify-content: space-around;
   list-style-type: none;
 }
+
+.trailDescription {
+  float: left;
+}
