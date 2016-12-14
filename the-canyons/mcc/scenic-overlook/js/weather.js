@@ -21,7 +21,7 @@ $.getJSON(api, function(data) {
   var temp_min = data.main.temp_min.toFixed(0);
   var temp_max = data.main.temp_max.toFixed(0);
   var weatherType = data.weather[0].description;
-  var windSpeed = data.wind.speed;
+  var windSpeed = data.wind.speed.toFixed(1);
   var windDirection = data.wind.deg;
   var humidity = data.main.humidity;
   var pressure = data.main.pressure;
