@@ -1,4 +1,4 @@
-// document.write("hello, from the leaflet.js file"); //scroll page to find me!!!
+// document.write("hello, from the leaflet.js file");
 console.log(document.title);
 
 "use strict";
@@ -20,17 +20,10 @@ var polygon = L.polygon([
     [40.575517, -111.69],//same lat, diff lon ... NW coord
     [40.5325, -111.69],//SW coord
     [40.5325, -111.67] //same lat, diff lon ... SE coord
-    // [40.575517, -111.680978]
 ]).addTo(mymap);
 
 //insert a marker popup
 marker.bindPopup("<b>Trail Head!<br><br>White Pine Lake.</b>").openPopup();
-
-//insert a standalone popup
-// var popup = L.popup()
-//     .setLatLng([40.55, -111.6875])
-//     .setContent("I am a standalone popup.")
-//     .openOn(mymap);
 
 //dealing with events
 function onMapClick(e) {
