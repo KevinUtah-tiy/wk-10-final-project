@@ -1,5 +1,5 @@
-// document.write("hello, from the leaflet.js file"); //scroll page to find me!!!
-console.log(document.title);
+// document.write("hello, from the leaflet.js file");
+// console.log(document.title);
 
 "use strict";
 var mymap = L.map('mapid').setView([40.700074, -111.713074], 12);
@@ -22,29 +22,10 @@ var marker = L.marker([40.700074, -111.713074]).addTo(mymap);
      [40.68011, -111.64531],//4
      [40.69511, -111.68926],//5
      [40.69583, -111.71771]//6
-
-//should I keep the circle?
-
-    //unnecessary points to be cleaned up
-    // [40.5741, -111.6136] //7
-    // [40.575517, -111.680978] example
 ]).addTo(mymap);
-
-// var circle = L.circle([40.60343, -111.5875], {
-//     color: 'royalblue',
-//     fillColor: 'skyblue',
-//     fillOpacity: 0.25,
-//     radius: 275
-// }).addTo(mymap);
 
 //insert a marker popup
 marker.bindPopup("<b>Winter Road to the <br> Big Water Yurt.</b>").openPopup();
-
-// insert a standalone popup
-// var popup = L.popup()
-//     .setLatLng([40.68899, -111.74340])
-//     .setContent("Scenic Overlook.")
-//     .openOn(mymap);
 
 //dealing with events
 function onMapClick(e) {
